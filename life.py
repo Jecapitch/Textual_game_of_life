@@ -183,7 +183,7 @@ class TextLife:
                             else self.dead
                             for c, cell in enumerate(row)
                             )
-                s += ('|' * (self.width - len(s)))
+                s += ('||' + self.dead * (self.width - len(s)))
                 print(s)
                 print(s, file=f)
             print(file=f)
